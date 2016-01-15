@@ -48,9 +48,19 @@
         <div class="col-md-6">
           <div class="jumbotron">
             <h2>Detailed Information</h2>
-		<br>Address:{{detailedInfo.address}}</br>
-		<br>Latitude:{{detailedInfo.coordinates.latitude}}</br>
-		<br>Longitude:{{detailedInfo.coordinates.longitude}}</br>
+		<div ng-if="detailedInfo">
+			<div ng-if="detailedInfo.address">
+			<br>Address:{{detailedInfo.address}}</br>
+			<br>Latitude:{{detailedInfo.coordinates.latitude}}</br>
+			<br>Longitude:{{detailedInfo.coordinates.longitude}}</br>
+			</div>
+			<div ng-if="detailedInfo.address==undefined">
+			No Physical Location
+			</div>
+		</div>
+		<div ng-if="detailedInfo==undefined">
+			No Location Selected Yet
+		</div>
           </div>
         </div>
       </div>
