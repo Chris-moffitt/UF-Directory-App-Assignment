@@ -53,7 +53,7 @@
 			<br>Latitude:{{detailedInfo.coordinates.latitude}}</br>
 			<br>Longitude:{{detailedInfo.coordinates.longitude}}</br>
 			</div>
-			<div ng-if="detailedInfo.address==undefined">
+			<div ng-if="!detailedInfo.address">
 			No Physical Location
 			</div>
 		</div>
