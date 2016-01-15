@@ -2,7 +2,36 @@
   margin: 15px 10px;
 }
 
+body{
+  background-color: lightblue;
+}
+
 .tableWrapper {
   max-height: 400px;
   overflow: auto;
+  border: 1px solid black;
+  font-weight: bold;
 }
+
+.tableWrapper tr:nth-child(odd){
+  background: #0066FF;
+}
+
+.tableWrapper tr:nth-child(even){
+  background: #FF9900;
+}
+
+.jumbotron {
+  font-size: 135%;
+  background-color: blue;
+  color: orange;
+  border: 1px solid black;
+}
+
+h1{
+  position: relative;
+  font-family: "Times New Romans", "Times New Romans", Serif;
+  font-size: 400%;
+  left: 72px;
+}
+	
